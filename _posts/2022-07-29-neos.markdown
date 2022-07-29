@@ -1,0 +1,116 @@
+---
+# layout: post
+title:  "Neos"
+---
+
+Content from:
+**June** - The Bare Basics of Getting Set Up in Neos [10 mins]
+https://www.youtube.com/watch?v=6nlKk3p038c
+
+# Loading In
+You'll load in to your localhome. You can load in to your dashboard and register, or register right in game. 
+# Tutorial 
+Redoing the tutorial is available in your dashboard. If you want to do this privately, be sure to set it to private in the session settings. Otherwise folks can help you out through the tutorial.
+![[Pasted image 20220727011634.png]]
+# The Dev Tool
+## Spawning
+To use the dev tool, open your **inventory** from the dash. Navigate to the following:
+Inventory => Essential Tools => Dev Tool.
+![[Pasted image 20220727012014.png]]
+Double click (pull the trigger twice) on the dev tool.
+
+To equipt it, either:
+- Point at it with your laser and double click
+- Point at it with your laser, grab it, and pull back on the joystick
+- Point at it with your laser, open the menu, and hit equip tool
+
+To dequip, open your context/radial menu and hit dequip. 
+Alternatively, you can stick it on the back of your hand. 
+## Inspecting Avatars
+Point at the avatar with the dev tool, hit secondary, open the context menu, and hit open inspector. To go to the root of your avatar, hit the double up arrow:
+![[Pasted image 20220727012803.png]]
+
+### Focusing on a Section
+If you want to focus on just a part of the avatar, double click the name of the part you want to focus on, then hit the button in the top right. That'll clean up the hiearchy view.
+![[Pasted image 20220727013339.png]]
+
+**TODO DESCRIBE HOW TO OPEN THE CONTEXT MENU**
+
+# Importing Avatars
+Go to the file browser in game, browse to the `.fbx` file, double click it.
+If you want to work on your avatar in desktop, you can just drag and drop the FBX in to neos. Or copy and paste in to neos. 
+Use the following:
+3D Model => Regular / Avatar => Auto Humanoid Height.
+The **advanced settings** will let you change your shaders. There are no custom shaders. 
+## Textures
+Import the textures just like you'd import the `.fbx`. Set the textures on the **body** in the inspector.
+![[Pasted image 20220727014308.png]]
+To edit the texture, grip the material with your controller, drag it out to the side and let go. This will open the **material dialog**.
+Open your inventory and double click the texture. Grip the texture with one hand, then click it in to the map with the other hand. 
+If the AlbedoColor values are `.8` for whatever reason, you can just drag and drop the 1 from the otehr fields in to the color values. 🤷‍♀️
+### Shaders
+Go to the Neos Essentials folder and equip the materials tip. Grip the material to "pull it out" of the dialog, hit secondary, and that will put the material in to the tip. Open the context radial menu and hit *conver to...* in the bottom right. Then just pick the shader you want.
+## Making Your Avatar a Real Boy
+**(Or Girl. Or They.)**
+Open your dock. Open the avatar creator in the top right. This will spawn a visor and some hands.
+![[Pasted image 20220727015651.png]]
+The two spheres inside the visor indicate where your eyes are going to be. Stick the headset on your avatar like goggles - but make sure you leave a bit of space so you don't blind yourself from the inside of the mesh.
+![[Pasted image 20220727020901.png]]
+After you have the visor in place, hit the first 4 options:
+- Align Head Forward
+- Align Head Up
+- Align Head Right
+- Center Head Position
+Give *align hands* a shot. It usually fails. Just rotate the hands in to the right position. The size doesn't matter much allegedly, so don't worry about them being too small or too big. You can scale them with two hands if you really want to. 
+Now, turn on *show tool anchors*. Put the *grab sphere* in the palm of your hand. 
+![[Pasted image 20220727021753.png]]
+Move the cone at the top of your index finger. That's going to be where your laser is going to come out from. 
+Your tool shelf is usually hidden inside of your hand. Stick that on the back of your hand or wherever you want.
+![[Pasted image 20220727021944.png]]
+You can also turn on eye and face tracking in this menu as well. 
+You can hit create now. Finally.
+# Equipping
+Point, open your context/radial menu, and hit Equip Avatar. ** 💾💾💾 DO NOT FORGET TO SAVE YOUR AVATAR. 💾💾💾 **
+## Saving Your Avatar
+Go to your inventory and hit the save icon in the top right wherever you want to save it. 
+![[Pasted image 20220727022634.png]]
+**After it is saved**, you can equip it with the lightning bolt, or double click it to spawn a copy and make modifications. 
+To set the default, click the purple heart avatar. 
+# Removing Your Muzzle
+If your muzzle is in the way - open up the inspector on your avatar. Click the star, then click attach component, then go to...
+Users => CommonAvatarSystem => AvatarRenderSettings
+![[Pasted image 20220727023554.png]]
+In there, check the **NearClip** option and set the value to **0.1**. Save the avatar to refresh the avatar. 
+![[Pasted image 20220727023636.png]]
+If you still see some geometry, just turn up the value. 
+# Dynamic Bones
+Select the bone you'd like to make dynamic. Click attach component. Go to:
+Physics => Dynamic Bones => Dynamic Bone Chain.
+At the very bottom, click **Setup From Children (rig only)**
+# Secondary
+**Index**: Push down on the touchpad
+**Occulus**: Press down on the thumbstick
+**Vive**: Push down the middle portion of the controller
+
+
+# Basic Controls
+![[540px-Index_controller.png]]
+
+## Keyboard
+**Esc** - Dash
+**LMB** - Primary action (toggles laser)
+RMB - Grab
+T or MMB - Context Menu
+R or MB4 - Secondary Action
+
+
+# dumping ground
+# Material Orbs
+Spawn material orbs and generate random colors
+![[Pasted image 20220728012116.png]]
+
+![[Pasted image 20220728012155.png]]
+The orbs will be random colors, matching which object should go in to what
+
+
+# fbt
